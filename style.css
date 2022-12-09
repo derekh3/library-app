@@ -49,3 +49,34 @@ body {
   align-items: center;
 
 }
+
+.modal {
+  background-color: lightblue;
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  padding: 20px 20px;
+  border-radius: 1rem;
+}
+
+.modal h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.form-subcontainer {
+  display: flex;
+  margin: 20px 0px;
+  gap: 5px;
+}
+
+.form-subcontainer input[type="text"],
+.form-subcontainer input[type="number"] {
+  width: 100%;
+}
